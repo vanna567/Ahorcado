@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+
+    <!-- tipo de fuente -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+    crossorigin="anonymous"></script>
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+</head>
+<body background="./assets/definitivo_fondo.png" style="font-size:'Pangoline', cursive;">
+    <!-- Bootstrap 
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+    crossorigin="anonymous"></script>
+    -->
+
+    <!-- CSS Y JS --> 
+    <script src="./style.css"></script>
+    <script src="./juego.js"></script>
+
+    <div class="container pt-5">
+        <div class="row text-center">
+            <div class="col-sm-4 text-center">
+                <h1>Ahorcado</h1>
+                <h4>Haz click en el teclado para adivinar la palabra</h4>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center" id="ABCdario">
+
+            </div>
+        </div> 
+
+        <div class="row text-center">
+            <div class="col-sm-4 text-center"><br>
+                <span>Vidas restantes: </span>
+                <span id="lifes">5</span>
+            </div>
+        </div>
+
+        <!-- Pistas -->
+        <div class="row text-center">
+            <div class="col-sm-4 text-center"><br>
+                <span>Pista: la categoría es...</span>
+                <span id="pista"></span>
+            </div>
+        </div> 
+
+        <!-- Espacios en Blanco -->
+        <div class="row text-center">
+            <div clase="col-sm-4 text-center"><br>
+                <p id="blanks"></p>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="row text-center">
+            <div clase="col-sm-4 text-center">
+                <p id="Resultado"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
